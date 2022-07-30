@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    height:100%;
+    width:100%;
+    background: linear-gradient(200deg, #ffffff, #000000);
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 4000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+li button{
+    width: 50px;
+    height: 40px;
+    color: rgb(0, 0, 0);
+    
+}
+
+.container{
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    margin: 50px auto;
+    border: 2px solid ;
+    border-radius: 52px;
+    flex: auto;
+    padding: 0 15px 2px 15px;
+}
+
+.addTask{
+    width:100%;
+    display: flex;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid;
+}
+ 
+.addTask >input[type="text"]{
+    width: 90%;
+    color: rgb(216, 210, 210);
+    border:none;
+    border-bottom: 2px solid white;
+    background:none;
+    padding: 10px;
+    font-size: 22px;
+    outline: none;
+}
+
+.addTask button{
+    margin: 0 10px;
+    background-color:rgb(0, 0, 0);
+    color: rgb(0, 190, 102);
+    font-size: 18px;
+     text-transform: uppercase;
+     padding: 10px;
+     border: none;
+     cursor: pointer;
+     border-radius: 10%;
+
+}
+
+.notCompleted,.Completed{
+    margin: 5px 0;
+    padding:  20px;
+}
+
+h3{
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(0, 255, 255);
+}
+
+ol{
+    list-style: none;
+    counter-reset:my-counter;
+
+}
+
+ol li{
+    width: 100%;
+    padding: 18px;
+    margin: 5px 0;
+    background:  rgb(255, 0, 0);
+    font-size: 22px;
+    counter-increment:my-counter;
+    border-radius:20px;
+}
+
+ol.Completed li{
+    background: rgba(0, 244, 8, 0.699);
+    
+}
+
+ol li::before{
+    content: counter(my-counter);
+    background:rgb(0, 0, 0);
+    width:2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 2rem;
+    text-align: center;
+    color: white; 
+    margin-right: 2%; 
+    
+}
+
+li button{
+ float: right;
+ padding: 5px;
+ font-size: 20px;
+ line-height: 28px;
+ margin-right:15px;
+ background: none;
+ border:none;
+ outline:none;
+ cursor: pointer;
+}
